@@ -5,6 +5,7 @@ namespace AppBundle\Controller;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
+use Symfony\Component\HttpFoundation\Request;
 
 /**
  * Controller des utilisateurs
@@ -19,12 +20,10 @@ class UserController extends Controller
      * Vue d'inscription d'un utilisateur
      * 
      * @Route("/sign-in")
-     * @Template("AppBundle:User:create")
+     * @Template("AppBundle:User:create.html.twig")
      */
-    public function signInAction()
+    public function signInAction(Request $request)
     {
-        
-        return array('name' => $name);
     }
 
 }
