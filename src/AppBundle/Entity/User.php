@@ -116,4 +116,8 @@ class User
         return $this->godFather;
     }
 
+    public function __toString()
+    {
+        return $this->username;
+    }
 }
