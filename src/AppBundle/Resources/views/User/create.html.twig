@@ -1,1 +1,5 @@
-{{ form_widget(form) }}
+{% if not valid %}
+    {{ form(form) }}
+{% else %}
+    Votre inscription à bien été enregistrée !
+{% endif %}
